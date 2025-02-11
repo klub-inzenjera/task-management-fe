@@ -1,0 +1,87 @@
+{
+  "epics": [
+    {
+      "id": "1",
+      "name": "Development",
+      "description": "Tasks related to software development"
+    },
+    {
+      "id": "2",
+      "name": "Testing",
+      "description": "Tasks related to software testing"
+    },
+    {
+      "id": "4",
+      "name": "Maintenance",
+      "description": "Tasks for maintaining the software after release"
+    },
+    {
+      "id": "5",
+      "name": "Documentation",
+      "description": "Tasks related to writing project documentation"
+    },
+    {
+      "id": "9ef6",
+      "name": "anaBanana"
+    },
+    {
+      "id": "2151",
+      "name": "cgr cgr",
+      "description": "kolikogod"
+    },
+    {
+      "id": "6f22",
+      "name": "sac"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "name": "Implement authentication",
+      "description": "Create login and registration functionality",
+      "epic_id": 1
+    },
+    {
+      "id": "2",
+      "name": "Setup database",
+      "description": "Configure PostgreSQL and migrations",
+      "epic_id": 1
+    },
+    {
+      "id": "5",
+      "name": "Deploy to staging",
+      "description": "Deploy the application to the staging environment",
+      "epic_id": 3
+    },
+    {
+      "id": "6",
+      "name": "Monitor system",
+      "description": "Monitor the system after deployment for any issues",
+      "epic_id": 4
+    },
+    {
+      "id": "ebcf",
+      "name": "ana",
+      "description": "opis",
+      "epic_id": "9ef6"
+    },
+    {
+      "id": "78d0",
+      "name": "ana",
+      "description": "cdcs",
+      "epic_id": "6f22"
+    },
+    {
+      "id": "c476",
+      "name": "dca",
+      "epic_id": 1,
+      "description": "dedc"
+    },
+    {
+      "id": "b4ec",
+      "name": "ana",
+      "epic_id": 12,
+      "description": "ffrev "
+    }
+  ]
+}
