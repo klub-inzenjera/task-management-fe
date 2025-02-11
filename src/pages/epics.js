@@ -102,16 +102,26 @@ function EpicList(props) {
             />
             </div>
             <table className="table">
-                <thead>
-                    <tr>
-                        {["id", "name", "description"].map((key) => (
-                            <th key={key} onClick={() => handleSort(key)} className="cursor-pointer">
-                                {key.toUpperCase()} {sortConfig.key === key ? (sortConfig.direction === "asc" ? "🔼" : "🔽") : ""}
-                            </th>
-                        ))}
-                        <th>Action</th>
-                    </tr>
-                </thead>
+            <thead>
+                <tr>
+                    {["id", "name", "description"].map((key) => (
+                        <th 
+                            key={key} 
+                            onClick={() => handleSort(key)} 
+                            className="cursor-pointer"
+                            style={{ userSelect: "none" }} 
+                        >
+                            {key.toUpperCase()}{" "}
+                            {sortConfig.key === key 
+                                ? (sortConfig.direction === "asc" ? "▲" : "▼") 
+                                : (sortConfig.key === null && key === "id" ? "▼" : "") 
+                            }
+                        </th>
+                    ))}
+                    <th>Action</th>
+                </tr>
+            </thead>
+
                 <tbody>
                     {currentEpics.map((epic, index) => (
                         <tr key={index}>
