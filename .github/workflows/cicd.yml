@@ -73,5 +73,5 @@ jobs:
               az containerapp update \
                 --name task-management-fe \
                 --resource-group klub-inzenjera \
-                --image ghcr.io/${{ github.repository_owner }}/react-app:${{ github.sha }} \
+                --image ghcr.io/${{ github.repository_owner }}/react-app:latest \
     
